@@ -6,7 +6,7 @@ import pandas as pd
 # Paths
 # -------------------------------------------------------------------
 
-PROJECT_ROOT = Path.cwd().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
@@ -147,7 +147,6 @@ def main() -> None:
     print(df_supply.columns[:10].tolist())
     print("\nCommodity columns:")
     print(df_com_price.columns[:10].tolist())
-
 
 if __name__ == "__main__":
     main()
