@@ -4,3 +4,9 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 data/raw/
+
+*.duckdb
+*.wal
+
+# processed data
+data/processed/*.csv
